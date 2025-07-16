@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Paint Web</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Paint Application</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" id="videoFeed" alt="Live Drawing Feed">
+        </div>
+        <div class="button-group">
+            <button onclick="startApp()">Turn ON</button>
+            <button onclick="stopApp()">Turn OFF</button>
+            <button onclick="downloadCanvas()">Download Canvas</button>
+        </div>
+    </div>
+
+    <script>
+        function startApp() {
+            fetch('/start', { method: 'POST' });
+        }
+        function stopApp() {
+            fetch('/stop', { method: 'POST' });
+        }
+        function downloadCanvas() {
+            window.location.href = "/download";
+        }
+    </script>
+</body>
+</html>
