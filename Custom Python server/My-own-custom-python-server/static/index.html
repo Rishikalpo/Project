@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Custom Web Server</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #1e1e2f;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #2a2a3d;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 2em;
+      color: #62d3f5;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #ffce6d;
+      margin-top: 30px;
+    }
+    p, li {
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+    a {
+      color: #89e0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background: #393958;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📡 Welcome to My Custom Python Web Server!</h1>
+    <p>This sleek and minimal server is built entirely from scratch using Python’s <code>socket</code> module.</p>
+
+    <h2>📘 Book Data</h2>
+    <p>Click below to view JSON data of available books:</p>
+    <p><a href="/book" target="_blank">📂 View Book JSON</a></p>
+
+    <h2>🎯 Purpose</h2>
+    <ul>
+      <li>🔍 Learn how basic HTTP requests work</li>
+      <li>📄 Serve static and dynamic content without frameworks</li>
+      <li>🧠 Understand how web servers work under the hood</li>
+    </ul>
+
+    <footer>Made with using Python | Rishikalpo Dey</footer>
+  </div>
+</body>
+</html>
